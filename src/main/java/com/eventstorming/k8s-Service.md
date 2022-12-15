@@ -1,5 +1,6 @@
 forEach: k8s.Service
 fileName: Test.md
+path: k8s/service
 ---
 
 # h1 Heading 8-)

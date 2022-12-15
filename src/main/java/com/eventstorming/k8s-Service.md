@@ -1,5 +1,5 @@
 forEach: k8s.Service
-fileName: Test.md
+fileName: {{object.metadata.name}}.md
 path: k8s/service
 ---
 

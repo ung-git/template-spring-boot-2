@@ -16,7 +16,7 @@ the YAML for such application should look similar to this :
 apiVersion: "v1"
 kind: "{{object.kind}}"
 metadata: 
-  name: "{{matadata.name}}"
+  name: "{{metadata.name}}"
   labels: 
     app: "dashboard"
 spec: 

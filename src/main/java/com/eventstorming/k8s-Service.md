@@ -13,13 +13,13 @@ path: k8s/service
 
 Trouble-Shooting for Kubernetes
 the YAML for such application should look similar to this :
-
+```yaml
 apiVersion: "v1"
 kind: "{{object.kind}}"
 metadata: 
-  name: "{{metadata.name}}"
+  name: "{{object.metadata.name}}"
   labels: 
-    app: "dashboard"
+    app: "{{object.metadata.name}}"
 spec: 
   ports: 
     - 
@@ -27,7 +27,7 @@ spec:
       targetPort: 8080
   selector: 
     app: "dashboard"
-
+```
 
 
 ## Horizontal Rules

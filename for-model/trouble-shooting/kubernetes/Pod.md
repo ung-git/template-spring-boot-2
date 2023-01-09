@@ -35,8 +35,8 @@ kubectl get {{object.kind}} {{object.metadata.name}}
 
 > 파드(Pod)가 동작 중(Runnging) 인가요?
 >> 파드가 준비된(Ready) 상태인가요?
->>> Ready 상태라면, ~$ kubectl port-forward pod/{{object.metadata.name}} 8080:{{portNumber object}} 을 실행하세요.
->>> Ready 상태가 아니라면, ~$ kubectl describe pod {{object.metadata.name}}을 실행하여 상태를 확인하세요.  
+>>> Ready 상태라면, kubectl port-forward pod/{{object.metadata.name}} 8080:{{portNumber object}} 을 실행하세요.
+>>> Ready 상태가 아니라면, kubectl describe pod {{object.metadata.name}}을 실행하여 상태를 확인하세요.  
 #
 
 ### 생성된 {{object.metadata.name}} {{object.kind}}의 상세 실행 정보를 확인하시려면 아래의 명령어를 입력하세요.
